@@ -1,4 +1,4 @@
-# Proyecto-Analisis
+r# Proyecto-Analisis
 
 El presente trabajo trata de implementar las distintas maneras de extraer datos de varias fuentes de información tales como web, bases de datos SQL y No SQL. 
 El análisis es relacionado con el manejo de Elasticsearch y varias herramientas de visualización.
@@ -68,8 +68,8 @@ proporcionaron resultados satisfactorios.
 
 Temática Juegos por el Mundo - Erick Andrade
 
-Se descargo un dataset en la pagina oficial de Kaggle que luego se paso los datos hacia Sql Server y verificar que el dataset me servia para el proposito. Hecho la carga se verifico que los datos no esten corrompidos, para lo cual se corrio una sentencia para determinar la información de los datos. Puesto, que no se encontro impurezas en el dataset se exporto el archivo para phpMyAdmin para darle un mejor control de la información al crear un usuario y contraseña para la información a traves de la plataforma de phpMyAdmin. Despues, se configuro el archivo de logstash para su subida para elasticsearch que previamente se incializo desde las carpetas y bin con la posterior conexión local. Tal y como se ve en la figura:
-```json
+Se descargo un dataset en la pagina oficial de Kaggle que luego se paso los datos hacia Sql Server y verificar que el dataset me servia para el proposito. Hecho la carga se verifico que los datos no esten corrompidos, para lo cual se corrio una sentencia para determinar la información de los datos. Puesto, que no se encontro impurezas en el dataset se exporto el archivo para phpMyAdmin para darle udn mejor control de la información al crear un usuario y contraseña para la información a traves de la plataforma de phpMyAdmin. Despues, se configuro el archivo de logstash para su subida para elasticsearch que previamente se incializo desde las carpetas y bin con la posterior conexión local. Tal y como se ve en la figura:
+```js
 input {
 	jdbc {
 		jdbc_connection_string => "jdbc:mysql://localhost:3306/erick"
@@ -89,5 +89,5 @@ output {
 	}
 }
 ```
-Es importante escoger el conector de la libreria oficial de jdbc, luego que este codigo se ejecute en el bin de logstash ```logstash -f json.conf``` se procede a utilizar la herramienta de Power BI Desktop para posteriormente escoger la data en la opcion de ODBC y conseguir "elasticsearch" como local. A partir de allí se manipula la data, tomando sumo cuidado cuales valores son los necesarios para evaluar sin necesidad de colocar toda la data. Ahora con las grafícas resaltadas las que son por el caso de estudio se evaluan y saca concluciones certeras. 
+Es importante escoger el conector de la libreria oficial de jdbc, luego que este codigo se ejecute en el bin de logstash ```logstash -f json.conf``` se procede a utilizar la herramienta de Power BI Desktop para posteriormente escoger la data en la opcion de ODBC y conseguir "elasticsearch" como local. A partir de allí se manipula la data, tomando sumo cuidado cuales valores son los necesarios para evaluar sin necesidad de colocar toda la data. Ahora con las grafícas resaltadas las que son por el caso de estudio se evaluan y para sacar concluciones certeras. 
 
