@@ -5,6 +5,7 @@ El análisis es relacionado con el manejo de Elasticsearch y varias herramientas
 
 Pulso político por provincias en Ecuador(Tweets) - Iván Fraga
 
+
 La extracción de datos se realizó mediante el script de Python Cosecha_TwitterPovincial.py
 El cual se encargo de extraer los tweets de Twitter por geolocalización de varias provincias hacia CouchDB
 EL proceso se repitío varias veces, debido a que se quería obtener un numero similar de tweets por provincia 
@@ -39,3 +40,15 @@ Una vez los datos recopilados y enviados a la base de Datos no estructurada Couc
     }
 }
 De esa forma podemos enviar los datos de una base de datos a otra base de Datos, para que funcione es importante que en la carpeta bin de logstash ejecutamos nuestro input y nuestro output, luego para la visualizacion usamo Power BI , se analizo los like por cuidad y podemos decir que las conclusiones son interesantes.
+
+
+Temática Libre (Kaggle)- David Cacuango
+
+Para este punto se extrajeron datasets de kaggle, después se subió manualmente todos los archivos .csv a la base de datos de MySql,
+en este caso se extrajeron tres datasets los cuales son: Medallas, Atletas, Equipos. Posteriormente con la herramienta de logstash 
+atreves del archivo de configuración “creacion_indices-Mysql_Elastic,JuegosOlimpicos.conf” se pasaron todos los datos a elasticsearch 
+el punto importante que tenemos que tener en cuenta es que se debedescargar el conector de .jar que nos provee MySql, y dentro del
+archivo de configuración poner la ruta de donde se encuentra.
+Una vez pasado los datos, procedio a visualizar mediante la herramienta de Tableau, lo cual nos permitió sacar unas breves conclusiones 
+
+
