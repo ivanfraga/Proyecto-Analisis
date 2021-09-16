@@ -49,6 +49,7 @@ en este caso se extrajeron tres datasets los cuales son: Medallas, Atletas, Equi
 atreves del archivo de configuración “creacion_indices-Mysql_Elastic,JuegosOlimpicos.conf” se pasaron todos los datos a elasticsearch 
 el punto importante que tenemos que tener en cuenta es que se debedescargar el conector de .jar que nos provee MySql, y dentro del
 archivo de configuración poner la ruta de donde se encuentra.
+
 Una vez pasado los datos, procedio a visualizar mediante la herramienta de Tableau, lo cual nos permitió sacar unas breves conclusiones 
 
 
