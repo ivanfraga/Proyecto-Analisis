@@ -16,4 +16,25 @@ El archivo creacion_indices_couch_provincia.conf se modifico por cada base de da
 La visualización de los datos presentados ahora en Cerebro, selo realizó por medio de Kibana, para ello se hizo una indexación por cada provincia y una indexación general,
 posteriormente se crearon diversas visualizaciones tales como: tablas, nubes de palabras, diagramas, etc. Para un análisis óptimo de la información obtenida 
 
-Pulso Politico en 20 cuidades del Ecuador (Facebook)
+Pulso Politico en 20 cuidades del Ecuador (Facebook)-Denisse Cumbal
+La extracion de  datos fue de la plataforma de Facebook mediante un script de Python 
+El cual se encargo de extraer los datos de Facebook de las personas que estas en el política - diputados, presidente y mas por cuidad 
+El proceso fue repetitivo para poder extraer lo datos (
+Se analizo inicialmente ¿Quienes estan representando o trabajando por la cuidad, luego se busco perfil por perfil cuidad por ciudad extrayendo los datos
+)
+Una vez los datos recopilados y enviados a la base de Datos no estructurada Couchdb , mediante la herramienta de logstash , es posible envviar los datos de Coudb a elasticsearch que se encuentra en la nube para esto se configuro de antemano (Se habilito la cuenta de  elasticsearch en la nube para obtener las credenciales , luego en un block de notas ponemos un input {
+  couchdb_changes {
+    username => "******"
+    password => "******"
+    db => "guayaquil3"
+  }
+}output {
+  elasticsearch {
+    	
+        hosts => "https:***************"
+        user => "elastic"
+        password => "*********"
+        index => "couchdb_guayaquil"
+    }
+}
+De esa forma podemos enviar los datos de una base de datos a otra base de Datos, para que funcione es importante que en la carpeta bin de logstash ejecutamos nuestro input y nuestro output, luego para la visualizacion usamo Power BI , se analizo los like por cuidad y podemos decir que las conclusiones son interesantes.
