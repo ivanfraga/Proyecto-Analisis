@@ -17,6 +17,7 @@ La visualización de los datos presentados ahora en Cerebro, selo realizó por m
 posteriormente se crearon diversas visualizaciones tales como: tablas, nubes de palabras, diagramas, etc. Para un análisis óptimo de la información obtenida 
 
 Pulso Politico en 20 cuidades del Ecuador (Facebook)-Denisse Cumbal
+
 La extracion de  datos fue de la plataforma de Facebook mediante un script de Python 
 El cual se encargo de extraer los datos de Facebook de las personas que estas en el política - diputados, presidente y mas por cuidad 
 El proceso fue repetitivo para poder extraer lo datos (
