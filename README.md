@@ -52,4 +52,13 @@ archivo de configuración poner la ruta de donde se encuentra.
 
 Una vez pasado los datos, procedio a visualizar mediante la herramienta de Tableau, lo cual nos permitió sacar unas breves conclusiones 
 
+Pulso político por provincias en Ecuador(Tweets) – Luis Catota
 
+La extracción de datos se realizó a través de un script de Python. El cual se encargó de extraer los títulos y una corta descripción de noticias del portal oficial
+de “EL comercio”(Diario nacional y empresa de medios de comunicacion en Ecuador) acerca de la inclinación política en varias provincias del país. Los datos
+recopilados fueron dirigidos hacia una base de datos NOSQL (MongoDB). EL proceso se repitió en varias ocasiones para obtener más datos. 
+Una vez extraídos los datos se creó el plugin “webmongodb.conf“, el cual sirve para  cargar los datos por medio de logstash además se levantaron los servicios de
+“cerebro”, y dentro de una terminal ubicada en la carpeta bin de logstash se ejecuta el siguiente comando 'logstash -f “webmongodb.conf’, de este modo se visualizaron
+los datos dentro de cerebro.
+Finalmente para analizar y presentar los datos de mejor manera usamos herramientas más completas como lo son elasticsearch y tableau public las cuales nos 
+proporcionaron resultados satisfactorios. 
