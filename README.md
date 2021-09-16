@@ -15,3 +15,5 @@ El archivo creacion_indices_couch_provincia.conf se modifico por cada base de da
 
 La visualización de los datos presentados ahora en Cerebro, selo realizó por medio de Kibana, para ello se hizo una indexación por cada provincia y una indexación general,
 posteriormente se crearon diversas visualizaciones tales como: tablas, nubes de palabras, diagramas, etc. Para un análisis óptimo de la información obtenida 
+
+Pulso Politico en 20 cuidades del Ecuador (Facebook)
