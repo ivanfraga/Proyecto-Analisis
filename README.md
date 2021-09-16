@@ -1,9 +1,9 @@
-r# Proyecto-Analisis
+## Proyecto-Analisis
 
 El presente trabajo trata de implementar las distintas maneras de extraer datos de varias fuentes de información tales como web, bases de datos SQL y No SQL. 
 El análisis es relacionado con el manejo de Elasticsearch y varias herramientas de visualización.
 
-Pulso político por provincias en Ecuador(Tweets) - Iván Fraga
+### Pulso político por provincias en Ecuador(Tweets) - Iván Fraga
 
 
 La extracción de datos se realizó mediante el script de Python Cosecha_TwitterPovincial.py
@@ -17,7 +17,7 @@ El archivo creacion_indices_couch_provincia.conf se modifico por cada base de da
 La visualización de los datos presentados ahora en Cerebro, selo realizó por medio de Kibana, para ello se hizo una indexación por cada provincia y una indexación general,
 posteriormente se crearon diversas visualizaciones tales como: tablas, nubes de palabras, diagramas, etc. Para un análisis óptimo de la información obtenida 
 
-Pulso Politico en 20 cuidades del Ecuador (Facebook)-Denisse Cumbal
+### Pulso Politico en 20 cuidades del Ecuador (Facebook)-Denisse Cumbal
 
 La extracion de  datos fue de la plataforma de Facebook mediante un script de Python 
 El cual se encargo de extraer los datos de Facebook de las personas que estas en el política - diputados, presidente y mas por cuidad 
@@ -52,7 +52,7 @@ archivo de configuración poner la ruta de donde se encuentra.
 
 Una vez pasado los datos, procedio a visualizar mediante la herramienta de Tableau, lo cual nos permitió sacar unas breves conclusiones 
 
-Pulso político por provincias en Ecuador(Web scraping) – Luis Catota
+### Pulso político por provincias en Ecuador(Web scraping) – Luis Catota
 
 La extracción de datos se realizó a través de un script de Python. El cual se encargó de extraer los títulos y una corta descripción de noticias
 del portal oficial de “EL comercio”(Diario nacional y empresa de medios de comunicacion en Ecuador) acerca de la inclinación política en varias provincias del país. 
@@ -66,7 +66,7 @@ Finalmente para analizar y presentar los datos de mejor manera usamos herramient
 proporcionaron resultados satisfactorios. 
 
 
-Temática Juegos por el Mundo - Erick Andrade
+### Temática Juegos por el Mundo - Erick Andrade
 
 Se descargo un dataset en la pagina oficial de Kaggle que luego se paso los datos hacia Sql Server y verificar que el dataset me servia para el proposito. Hecho la carga se verifico que los datos no esten corrompidos, para lo cual se corrio una sentencia para determinar la información de los datos. Puesto, que no se encontro impurezas en el dataset se exporto el archivo para phpMyAdmin para darle udn mejor control de la información al crear un usuario y contraseña para la información a traves de la plataforma de phpMyAdmin. Despues, se configuro el archivo de logstash para su subida para elasticsearch que previamente se incializo desde las carpetas y bin con la posterior conexión local. Tal y como se ve en la figura:
 ```js
