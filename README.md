@@ -52,7 +52,7 @@ archivo de configuración poner la ruta de donde se encuentra.
 
 Una vez pasado los datos, procedio a visualizar mediante la herramienta de Tableau, lo cual nos permitió sacar unas breves conclusiones 
 
-Pulso político por provincias en Ecuador(Tweets) – Luis Catota
+Pulso político por provincias en Ecuador(Web scraping) – Luis Catota
 
 La extracción de datos se realizó a través de un script de Python. El cual se encargó de extraer los títulos y una corta descripción de noticias
 del portal oficial de “EL comercio”(Diario nacional y empresa de medios de comunicacion en Ecuador) acerca de la inclinación política en varias provincias del país. 
